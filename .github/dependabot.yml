@@ -1,0 +1,22 @@
+version: 2
+updates:
+- package-ecosystem: pip
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "10:00"
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: jupyter-client
+    versions:
+    - 6.1.11
+    - 6.1.12
+    - 6.1.13
+  - dependency-name: virtualenv
+    versions:
+    - 20.4.0
+    - 20.4.2
+    - 20.4.3
+  - dependency-name: jupyter-core
+    versions:
+    - 4.7.0
